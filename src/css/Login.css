@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color:red;
+    --background-color:linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+    --text-color:rgb(205, 205, 205);
+    --button-color: rgb(255, 114, 114);
+}
+
+body{
+    background: var(--background-color);
+}
+.main-login{
+width: 400px;
+height: 500px;
+background-color: rgba(128, 128, 128, 0.358);
+margin: 60px auto;
+border-radius: 20px;
+box-shadow: 5px 5px rgba(31, 31, 31, 0.619);
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.login-title{
+  color: var(--text-color);
+  padding:20px;
+  margin: 0 auto;
+  font-size: x-large;
+  text-shadow:1px 1px gray;
+}
+
+.login-form{
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column;
+    color: white;
+}
+.login-email{
+    width: 260px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.login-password{
+    width: 260px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}

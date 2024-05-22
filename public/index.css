@@ -3,60 +3,26 @@
     padding: 0;
     position: relative;
 }
-
+title{
+    display: none;
+}
+style{
+    display: none;
+}
 :root{
     --main-color:red;
     --background-color:linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
     --text-color:rgb(205, 205, 205);
 }
-body{overflow: auto;
-    background-color: #2b1108;
+body{
+    overflow: auto;
     overflow: -moz-scrollbars-none;
     -ms-overflow-style: none;
+
 }
+
 body::-webkit-scrollbar {
 width: 0 !important;
 display: none; 
 }
-.video-background{
-    width: 100%;
-    height: 100%;
-}
-.footer{
-    width: 100%;
-    height: 150px;
-    display: flex;
-    justify-content: space-around;
-}
-.footer-context{
-    align-items: center;
-    
-}
-.footer-context ul {
-margin-top: 5px;
-display: flex;
-flex-direction: column;
-justify-content: space-between
-}
-.footer-context li {
-    padding: 5px;
-    color:var(--text-color);
-}
 
-.footer-image{
-    display: flex;
-    justify-content: space-between;
-}
-.footer-img{
-    width: 40%;
-}
-.footer-image ul{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-.footer-image li {
-    color:var(--text-color);
-    padding: 10px 10px;
-}
