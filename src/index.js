@@ -5,17 +5,30 @@ import Main from './page/Main.js';
 import Login from './page/Login.js';
 import Register from './page/Register.js';
 import Home from './page/Home.js';
+import Notfound from './page/Notfound.js';
+import Message from './page/Message.js';
+import User from './page/User.js';
+import { Outlet } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
 <BrowserRouter>
 <Routes>
+
 <Route path='/' element={<Main/>}></Route>
 <Route path='/login' element={<Login/>}></Route>
 <Route path='/register' element={<Register/>}></Route>
-<Route path='/home' element={<Home/>}></Route>
+
+<Route path='/home' element={<Home/>}>
+
+<Route path='message' element={<Message/>}/>
+<Route path='user' element={<User/>}/>
+</Route>
+
+<Route path='*' element={<Notfound/>}></Route>
 </Routes>
+<Outlet/>
 </BrowserRouter>
   </React.StrictMode>
 );

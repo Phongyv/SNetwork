@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword, signInAnonymously} from "firebase/auth";
+import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword} from "firebase/auth";
 
 const firebaseConfig = {
   apiKey:"AIzaSyBhXvtCklDMDL051siPiDYVqzTEAq4mQRk",
@@ -18,17 +18,18 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth =getAuth(app);
 
+
 const registerSubmit = () =>{
   const email = document.getElementById('register-email').value;
   const password = document.getElementById('register-password').value;
   createUserWithEmailAndPassword(auth,email,password)
   .then((userCredential)=>{
     const user = userCredential.user;
+    console.log(user)
    alert('User Registed')
    window.location.pathname='/login'
   })
   .catch((error)=>{
-    const errorCode = error.code;
     const errorMessage = error.message;
     alert(errorMessage)
   })
@@ -40,11 +41,13 @@ const loginSubmit = () =>{
   signInWithEmailAndPassword(auth,email,password)
   .then((userCredential)=>{
     const user = userCredential.user;
+    console.log(user)
    alert('Login Success')
+  localStorage.setItem('email',email)
    window.location.pathname='/home'
   })
   .catch((error)=>{
-    const errorCode = error.code;
+   
     const errorMessage = error.message;
     alert(errorMessage)
   })

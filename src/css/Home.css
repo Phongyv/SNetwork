@@ -3,8 +3,111 @@
     margin: 0;
 }
 :root{
-    --main-color:red;
+    --main-color:rgba(255, 41, 41, 0.897);
     --background-color:linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
     --text-color:rgb(205, 205, 205);
     --button-color: rgb(255, 114, 114);
+    --back-color:rgb(255, 194, 194);
+}
+
+
+.home-navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-navbar-left{
+    display: flex;
+}
+.home-navbar-left-logo{
+width: 60px;
+height: 60px;
+margin: 0 10px;
+
+}
+.home-navbar-left-search{
+    height: 20px;
+    padding:10px 80px 10px 10px;
+    border-radius: 20px;
+    border: 0px;
+    margin: 0 10px;
+    margin: auto 0;
+}
+.home-navbar-left-submit{
+width: 40px;
+height: 40px;
+margin: 10px 5px;
+border-radius: 50%;
+border: 0.5px solid var(--button-color);
+background-color:var(--back-color) ;
+}
+.home-navbar-left-submit:hover{
+    cursor: pointer;
+}
+
+
+.home-navbar-center{
+    width: 30px;
+    height: 30px;
+    margin: auto 0;
+    padding: 0 150px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 0.5px solid var(--main-color);
+    background-color: var(--back-color);
+}
+.home-navbar-center:hover{
+    cursor: pointer;
+}
+
+
+.home-navbar-right{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+.home-navbar-right:hover{cursor: pointer;}
+
+.home-navbar-right-message{
+    width:30px;
+    height:30px;
+    margin: auto 0;
+    padding: 8px;
+    border-radius: 50%;
+    border: 0.5px solid var(--main-color);
+    background-color: var(--back-color);
+}
+
+.home-navbar-right-user{
+height: 45px;
+display: flex;
+border-radius: 30px;
+border: 0.5px solid var(--main-color);
+background-color: var(--back-color);
+margin: auto 10px;
+}
+.home-navbar-right-user img{
+
+    width:30px;
+    height:30px;
+    margin: auto 0;
+    padding: 8px;
+
+}
+.home-navbar-right-user span{
+margin: auto 0;
+padding-right: 10px;
+}
+
+
+
+.home-body{
+    width: 100%;
+    height: 10000px;
+    background-color: white;
 }
