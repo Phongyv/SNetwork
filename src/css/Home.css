@@ -1,0 +1,10 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --main-color:red;
+    --background-color:linear-gradient(98.3deg, rgb(0, 0, 0) 10.6%, rgb(255, 0, 0) 97.7%);
+    --text-color:rgb(205, 205, 205);
+    --button-color: rgb(255, 114, 114);
+}

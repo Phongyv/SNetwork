@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Main from './page/Main.js';
-import Login from './page/Register.js';
+import Login from './page/Login.js';
 import Register from './page/Register.js';
+import Home from './page/Home.js';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -13,6 +14,7 @@ root.render(
 <Route path='/' element={<Main/>}></Route>
 <Route path='/login' element={<Login/>}></Route>
 <Route path='/register' element={<Register/>}></Route>
+<Route path='/home' element={<Home/>}></Route>
 </Routes>
 </BrowserRouter>
   </React.StrictMode>

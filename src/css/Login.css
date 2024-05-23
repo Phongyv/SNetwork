@@ -21,7 +21,7 @@ border-radius: 20px;
 box-shadow: 5px 5px rgba(31, 31, 31, 0.619);
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: space-around;
 }
 
 .login-title{
@@ -50,4 +50,22 @@ justify-content: space-between;
     height: 30px;
     padding: 10px 20px;
     border-radius: 20px;
+}
+.login-submit{
+    display: flex;
+    justify-content: space-around;
+}
+.login-submit-button{
+    padding: 20px 30px;
+    background-color:rgb(255, 99, 47);
+    color:rgb(255, 255, 255) ;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.login-register-button{
+    padding: 20px 30px;
+    background-color:var(--text-color);
+    color: black;
+    border-radius: 20px;
+    text-decoration: none;
 }

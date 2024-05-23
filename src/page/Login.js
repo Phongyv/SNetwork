@@ -1,4 +1,6 @@
 import "../css/Login.css"
+import { Link } from "react-router-dom"
+import { loginSubmit } from "../firebase"
 
 function Login(){
     return (
@@ -12,7 +14,8 @@ function Login(){
             <input className="login-password" type="password" placeholder="Password" />
         </div>
         <div className="login-submit">
-        
+            <Link className="login-submit-button" id="login-email" onClick={()=>{loginSubmit()}}>Login</Link>
+            <Link className="login-register-button" id="login-password" to={"/register"}>Register</Link>
         </div>
      </div>
         </>

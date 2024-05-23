@@ -17,8 +17,8 @@ return(
     </div>
     </div>
     <div className='register'>
+    <Link className='register-button' to="/login">Login</Link>
     <Link className='register-button' to="/register">Register</Link>    
-        <Link className='register-button' to="/login">Login</Link>
     </div>
        
 </div>
