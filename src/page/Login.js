@@ -1,6 +1,6 @@
 import "../css/Login.css"
 import { Link } from "react-router-dom"
-import { loginSubmit } from "../firebase"
+import { loginSubmit } from "../firebase.js"
 
 function Login(){
     return (
@@ -9,13 +9,13 @@ function Login(){
         <div className="login-title">Login</div>
         <div className="login-form">
         <label>Email</label>
-            <input className="login-email" type="email" placeholder="Email" />
+            <input className="login-email" id="login-email"  type="email" placeholder="Email" />
             <label>Password</label>
-            <input className="login-password" type="password" placeholder="Password" />
+            <input className="login-password" id="login-password" type="password" placeholder="Password" />
         </div>
         <div className="login-submit">
-            <Link className="login-submit-button" id="login-email" onClick={()=>{loginSubmit()}}>Login</Link>
-            <Link className="login-register-button" id="login-password" to={"/register"}>Register</Link>
+            <Link className="login-submit-button" onClick={()=>{loginSubmit()}}>Login</Link>
+            <Link className="login-register-button"  to={"/register"}>Register</Link>
         </div>
      </div>
         </>

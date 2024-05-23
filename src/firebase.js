@@ -1,7 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
-import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword} from "firebase/auth";
+import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword, signInAnonymously} from "firebase/auth";
 
 const firebaseConfig = {
   apiKey:"AIzaSyBhXvtCklDMDL051siPiDYVqzTEAq4mQRk",
@@ -33,10 +33,11 @@ const registerSubmit = () =>{
     alert(errorMessage)
   })
 }
+
 const loginSubmit = () =>{
-  const loginemail = document.getElementById('login-email').value;
-  const loginpassword = document.getElementById('login-password').value;
-  createUserWithEmailAndPassword(auth,loginemail,loginpassword)
+  const email = document.getElementById('login-email').value;
+  const password = document.getElementById('login-password').value;
+  signInWithEmailAndPassword(auth,email,password)
   .then((userCredential)=>{
     const user = userCredential.user;
    alert('Login Success')
@@ -46,7 +47,6 @@ const loginSubmit = () =>{
     const errorCode = error.code;
     const errorMessage = error.message;
     alert(errorMessage)
-    
   })
 }
 
