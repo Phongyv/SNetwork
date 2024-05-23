@@ -4,14 +4,14 @@ import { getAnalytics } from "firebase/analytics";
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword} from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey:"AIzaSyBhXvtCklDMDL051siPiDYVqzTEAq4mQRk",
-  authDomain: "snetwork-80dc1.firebaseapp.com",
-  databaseURL: "https://snetwork-80dc1-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "snetwork-80dc1",
-  storageBucket: "snetwork-80dc1.appspot.com",
-  messagingSenderId: "4309037337",
-  appId: "1:4309037337:web:d83f11eb6ecc83e94b5588",
-  measurementId: "G-E8R825D7NR"
+  apiKey:process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  databaseURL:process.env.REACT_APP_DATABASE_URL ,
+  projectId:"snetwork-80dc1",
+  storageBucket:process.env.REACT_APP_STORAGE_BUCKET ,
+  messagingSenderId:process.env.REACT_APP_MESSAGING_SENDER_ID ,
+  appId:"1:4309037337:web:d83f11eb6ecc83e94b5588",
+  measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
