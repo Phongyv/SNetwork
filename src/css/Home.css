@@ -139,3 +139,23 @@ color: white;
     display: block;
     
 }
+.home-body-center{
+    width: 100%;
+    margin-top: 30px;
+}
+.home-body-center-title{
+    width: 1224px;
+    left: 30px;
+    background-color:rgba(0, 221, 22, 0.774);
+    border-radius: 20px;
+}
+.home-body-center-title::before{
+    width: 10px;
+    background-color: red;
+}
+.home-body-center-title h1{
+    color:rgba(255, 255, 255, 0.845);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    padding: 10px 20px;
+}  

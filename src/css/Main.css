@@ -32,28 +32,38 @@ display: none;
 
 .body{
     background: var(--background-color);
-    height: 800px;
+    height: 600px;
 }
 .content{
-    padding-top: 100px;
+    
     display: flex;
     justify-content: space-around;
 }
 .content:hover{
     cursor: default;
 }
-
-.content-img{ 
-   
-    width: 30%;
-   
+@keyframes moveIcon{
+    0%{
+        transform: translate(0,0)
+    }
+    100%{
+        transform: translate(300px,0);
+    }
 }
+.content-img{ 
+    width: 30%;
+    left: -300px;
+    transform: translate(300px,0);
+   animation:moveIcon 2s ;
+}
+
 .text{
 padding-right: 50px;
  color: var(--text-color);
  display: flex;
  flex-direction: column;
  justify-content: space-around;
+
 }
 
 .register{
@@ -65,16 +75,18 @@ width: 300px;
 height: 40px;
 text-align: center;
 text-decoration: none;
-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
 background-color:var(--button-color);
 margin: 50px auto;
 padding-top: 25px;
-border: 0.5px solid ;
+border: none;
 border-radius: 30px;
 font-size: large;
 font-weight: 600;
 }
-
+.register-button:hover{
+    transform: scale(1.1);
+}
 
 
 

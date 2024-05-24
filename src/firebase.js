@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword} from "firebase/auth";
-
+import { getFirestore,getDocs,collection } from "firebase/firestore";
 const firebaseConfig = {
   apiKey:process.env.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
@@ -17,6 +17,13 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 const auth =getAuth(app);
+const db = getFirestore(app)
+
+
+  const querySnapshot = await getDocs(collection(db, "thumnail"));
+  querySnapshot.forEach((doc) => {
+      console.log(doc.data().name);
+  });
 
 
 const registerSubmit = () =>{
@@ -26,7 +33,7 @@ const registerSubmit = () =>{
   .then((userCredential)=>{
     const user = userCredential.user;
     console.log(user)
-   alert('User Registed')
+   alert('Đăng Ký Thành Công')
    window.location.pathname='/login'
   })
   .catch((error)=>{
@@ -42,7 +49,7 @@ const loginSubmit = () =>{
   .then((userCredential)=>{
     const user = userCredential.user;
     console.log(user)
-   alert('Login Success')
+   alert('Đăng Nhập Thành Công')
   localStorage.setItem('email',email)
    window.location.pathname='/home'
   })

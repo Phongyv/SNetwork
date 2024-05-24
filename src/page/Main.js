@@ -12,13 +12,13 @@ return(
 
     <div className='text'>
         <h1>SNetwork</h1>
-        <h2>SNetwork is a decentralized social networking platform that aims to provide users with control over their own data and privacy</h2>
-        <h3>SNetwork enables users to securely connect with others, share content, and engage in conversations without the fear of data breaches or manipulation by third parties. With a strong focus on security and transparency, SNetwork seeks to revolutionize the way social media operates, putting the power back in the hands of the users.</h3>
+        <h2>SNetwork là một nền tảng mạng xã hội phi tập trung nhằm mục đích cung cấp cho người dùng quyền kiểm soát dữ liệu và quyền riêng tư của họ</h2>
+        <h3>SNetwork cho phép người dùng kết nối an toàn với người khác, chia sẻ nội dung và tham gia vào các cuộc trò chuyện mà không sợ bên thứ ba vi phạm hoặc thao túng dữ liệu. Với sự tập trung mạnh mẽ vào bảo mật và tính minh bạch, SNetwork tìm cách cách mạng hóa cách thức hoạt động của mạng xã hội, trao lại quyền lực cho người dùng.</h3>
     </div>
     </div>
     <div className='register'>
-    <Link className='register-button' to="/login">Login</Link>
-    <Link className='register-button' to="/register">Register</Link>    
+    <Link className='register-button' to="/login">Đăng Nhập</Link>
+    <Link className='register-button' to="/register">Đăng Ký</Link>    
     </div>
        
 </div>
