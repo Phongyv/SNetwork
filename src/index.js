@@ -4,10 +4,11 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Main from './page/Main.js';
 import Login from './page/Login.js';
 import Register from './page/Register.js';
-import Home from './page/Home.js';
+import Home from './page/Home.jsx';
 import Notfound from './page/Notfound.js';
 import Message from './page/Message.js';
 import User from './page/User.js';
+
 import { Outlet } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -22,9 +23,12 @@ root.render(
 
 <Route path='/home' element={<Home/>}>
 
-<Route path='message' element={<Message/>}/>
+<Route path='message' element={<Message/>}>
+</Route>
 <Route path='user' element={<User/>}/>
 </Route>
+
+
 
 <Route path='*' element={<Notfound/>}></Route>
 </Routes>
