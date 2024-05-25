@@ -64,7 +64,14 @@ function Home(){
             {
                 datas.map((thumnail)=>{
                     return(
-                    <Link to={'/home/view'} className='home-body-center-main-item' key={thumnail.key}  onClick={()=>{localStorage.setItem('itemId',thumnail.key)}} > 
+                    <Link to={'/home/view'} className='home-body-center-main-item' key={thumnail.key}  onClick={()=>{
+                        localStorage.setItem('key',thumnail.key)
+                        localStorage.setItem('name',thumnail.name)
+                        localStorage.setItem('mota',thumnail.mota)
+                        localStorage.setItem('noidung',thumnail.noidung)
+                        localStorage.setItem('url',thumnail.url)
+                        localStorage.setItem('video',thumnail.video)
+                        }} > 
                     <img className='home-body-center-main-item-img' src={thumnail.url} alt="" />
                     <span className='home-body-center-main-item-name' >{thumnail.name}</span>
                 </Link>
@@ -77,4 +84,5 @@ function Home(){
         </>
     )
 }
+
 export default Home;

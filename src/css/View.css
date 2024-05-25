@@ -1,37 +1,102 @@
 .view-navbar-back{
 margin: auto 10px;
+
 }
 .view-navbar-back-icon{
 width: 40px;
 height: 40px;
+border-radius: 50%;
 }
 .view-body{
     padding: 60px 20px;
     display: flex;
     flex-direction: column;
+    background-color: var(--background-color);
 }
 .view-body-top{
     display: flex;
     padding: 20px 0;
 }
 .view-body-left{
-    flex: 2;
+    flex: 3;
     display: flex;
     flex-direction: column;
 }
 
 .view-body-left-video{
     width: 100%;
-    padding: 5px;
+    border-radius: 20px;
 }
 
 .view-body-left-info{
     display: flex;
+    flex-direction: column;
+}
+.view-body-left-info-top{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.view-body-left-info-bot{
+    display: flex;
+}
+.view-body-left-info-bot img{
+    border: none;
+    width: 130px;
+    height: 195px;
+}
+.view-body-left-info h1{
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+.view-body-left-info h2{
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
 }
 
+.view-body-left-info h3{
+    color: rgba(255, 255, 255, 0.653);
+    padding: 0 10px;
+    font-weight: 10;
+    font-weight: 50;
+}
+.view-body-right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.view-body-right-item{
+width: 300px;
+height: 100px;
+margin: 10px auto;
+display: flex;
+}
+.view-body-right-item:hover{
+cursor: pointer;
+}
+.view-body-right-item-img{
+    width: 65px;
+    height: 100px;
+    padding: 0 20px;
+    padding-right: 10px;
 
+}
+.view-body-right-item-info{
+    display: flex;
+    flex-direction: column;
 
-
+  
+}
+.view-body-right-item-name{
+color: rgb(255, 255, 255);
+font-size: large;
+}
+.view-body-right-item-mota{
+    overflow: hidden;
+    margin-top: 5px;
+    color: antiquewhite;
+    
+}
 
 
 

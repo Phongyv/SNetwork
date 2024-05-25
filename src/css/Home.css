@@ -3,16 +3,12 @@
     margin: 0;
 }
 :root{
-    --main-color:rgba(255, 60, 60, 0.726);
-    --background-color:linear-gradient(98.3deg, rgba(151, 89, 2, 0.765) 10.6%, rgb(172, 0, 0) 97.7%);
+    --main-color:rgba(138, 156, 255, 0.74);
+    --background-color:linear-gradient(98.3deg, rgb(0, 7, 69) 10.6%, rgb(105, 105, 105) 97.7%);
     --text-color:rgb(205, 205, 205);
     --button-color: rgb(255, 114, 114);
     --back-color:rgba(255, 255, 255, 0.283);
     --blur--color: rgba(79, 64, 96, 0.4);
-}
-
-body{
-    background-color: aliceblue;
 }
 
 .home-navbar{
@@ -117,7 +113,7 @@ color: white;
 
 .home-body{
     width: 100%;
-    padding-top: 65px;
+    padding-top: 70px;
 }
 .slider{
     width: 1224px;
@@ -146,7 +142,7 @@ color: white;
 .home-body-center-title{
     width: 1224px;
     left: 30px;
-    background-color:rgba(0, 221, 22, 0.774);
+    background-color:rgba(255, 137, 2, 0.774);
     border-radius: 20px;
 }
 .home-body-center-title::before{
@@ -155,7 +151,6 @@ color: white;
 }
 .home-body-center-title h1{
     color:rgba(255, 255, 255, 0.845);
-    font-family: 'Courier New', Courier, monospace;
     font-size: 35px;
     padding: 10px 20px;
 }  
@@ -172,6 +167,8 @@ color: white;
     margin-bottom: 30px;
 }
 .home-body-center-main-item-img{
+    width: 260px;
+    height: 390px;
     margin: 0 auto;
     border-radius: 20px;
 }
