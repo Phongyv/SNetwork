@@ -1,0 +1,40 @@
+.view-navbar-back{
+margin: auto 10px;
+}
+.view-navbar-back-icon{
+width: 40px;
+height: 40px;
+}
+.view-body{
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.view-body-top{
+    display: flex;
+    padding: 20px 0;
+}
+.view-body-left{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.view-body-left-video{
+    width: 100%;
+    padding: 5px;
+}
+
+.view-body-left-info{
+    display: flex;
+}
+
+
+
+
+
+
+
+.view-body-right{
+    flex: 1;
+}

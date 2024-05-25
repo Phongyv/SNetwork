@@ -3,7 +3,7 @@
     margin: 0;
 }
 :root{
-    --main-color:rgba(79, 79, 79, 0.452);
+    --main-color:rgba(255, 60, 60, 0.726);
     --background-color:linear-gradient(98.3deg, rgba(151, 89, 2, 0.765) 10.6%, rgb(172, 0, 0) 97.7%);
     --text-color:rgb(205, 205, 205);
     --button-color: rgb(255, 114, 114);
@@ -159,3 +159,28 @@ color: white;
     font-size: 35px;
     padding: 10px 20px;
 }  
+
+.home-body-center-main{
+    margin: 0 auto;
+    padding-top: 40px;
+    width: 1224px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.home-body-center-main-item{
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+.home-body-center-main-item-img{
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.home-body-center-main-item-name{
+width: 260px;
+margin: 0 auto;
+margin-top: 5px;
+color: #fff;
+font-size: larger;
+font-weight: 600;
+text-align: center;
+}

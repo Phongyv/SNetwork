@@ -7,7 +7,7 @@ import Register from './page/Register.js';
 import Home from './page/Home.jsx';
 import Notfound from './page/Notfound.js';
 import Message from './page/Message.js';
-import User from './page/User.js';
+import View from './page/View.js';
 
 import { Outlet } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,14 +21,12 @@ root.render(
 <Route path='/login' element={<Login/>}></Route>
 <Route path='/register' element={<Register/>}></Route>
 
-<Route path='/home' element={<Home/>}>
+<Route path='/home' element={<Home/>}></Route>
 
-<Route path='message' element={<Message/>}>
+<Route path='/message' element={<Message/>}>
 </Route>
-<Route path='user' element={<User/>}/>
+<Route path='/home/view' element={<View/>}>
 </Route>
-
-
 
 <Route path='*' element={<Notfound/>}></Route>
 </Routes>

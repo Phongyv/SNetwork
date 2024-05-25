@@ -2,7 +2,7 @@
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import { getAuth,createUserWithEmailAndPassword,signInWithEmailAndPassword} from "firebase/auth";
-import { getFirestore,getDocs,collection } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
   apiKey:process.env.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
@@ -20,10 +20,10 @@ const auth =getAuth(app);
 const db = getFirestore(app)
 
 
-  const querySnapshot = await getDocs(collection(db, "thumnail"));
-  querySnapshot.forEach((doc) => {
-      console.log(doc.data().name);
-  });
+  // const querySnapshot = await getDocs(collection(db, "thumnail"));
+  // querySnapshot.forEach((doc) => {
+  //     console.log(doc.data().name);
+  // });
 
 
 const registerSubmit = () =>{
@@ -60,4 +60,4 @@ const loginSubmit = () =>{
   })
 }
 
-export {analytics ,registerSubmit,loginSubmit}
+export {analytics ,registerSubmit,loginSubmit,db}
