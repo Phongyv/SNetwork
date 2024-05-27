@@ -184,8 +184,9 @@ text-align: center;
         margin: auto 4px;
         }
         .home-navbar-left-search{
+            width: 100px;
+            padding: 10px;
             height: 10px;
-            padding:10px 20px 10px 10px;
             border-radius: 20px;
             border: 0px;
             margin: 0 5px;
@@ -244,7 +245,7 @@ text-align: center;
             
             .home-body-center-title h1{
                 color:rgba(255, 255, 255, 0.845);
-                font-size: 9px;
+                font-size: 8px;
                 padding: 10px;
             }  
 
