@@ -6,7 +6,6 @@ import Login from './page/Login.js';
 import Register from './page/Register.js';
 import Home from './page/Home.jsx';
 import Notfound from './page/Notfound.js';
-import Message from './page/Message.js';
 import View from './page/View.js';
 
 import { Outlet } from 'react-router-dom';
@@ -23,8 +22,6 @@ root.render(
 
 <Route path='/home' element={<Home/>}></Route>
 
-<Route path='/message' element={<Message/>}>
-</Route>
 <Route path='/home/view' element={<View/>}>
 </Route>
 

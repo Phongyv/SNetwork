@@ -49,7 +49,6 @@ const loginSubmit = () =>{
   .then((userCredential)=>{
     const user = userCredential.user;
     console.log(user)
-   alert('Đăng Nhập Thành Công')
   localStorage.setItem('email',email)
    window.location.pathname='/home'
   })

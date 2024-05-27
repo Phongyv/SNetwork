@@ -32,17 +32,8 @@ function View(){
             <Link  className='view-navbar-back' to="/home">
             <img className='view-navbar-back-icon' src='https://cdn-icons-png.flaticon.com/128/8022/8022662.png' alt=''/></Link>
             <input type='text' placeholder='Search' className='home-navbar-left-search'></input>
-          <img className='home-navbar-left-submit' src="https://cdn-icons-png.flaticon.com/128/10947/10947920.png" alt="" />
         </div>
-
-        <Link className='home-navbar-link' to={'/home'}>
-        <img className='home-navbar-center' src="https://cdn-icons-png.flaticon.com/128/9073/9073032.png" alt=""/>
-        </Link>
-
         <div className='home-navbar-right'>
-            <Link className='home-navbar-link' to={'/message'}>
-            <img className='home-navbar-right-message' src='https://cdn-icons-png.flaticon.com/128/2190/2190552.png' alt='' />
-            </Link>
             <Link className='home-navbar-link' >
             <div className='home-navbar-right-user' >
             <img  src='https://cdn-icons-png.flaticon.com/128/149/149071.png' alt='' />
@@ -97,9 +88,7 @@ function View(){
                             </div>)} }})  }
 </div>
 </div>
-<div className='view-body-bot'>
-    
-</div>
+<div className='view-body-bot'></div>
 </div>
 </div>
 </>
